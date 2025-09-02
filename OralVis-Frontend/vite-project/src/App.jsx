@@ -22,10 +22,10 @@ function App() {
 
   return (
     <div>
-      <header style={{ padding: '1rem', background: '#39c9aaff', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+      <header style={{ padding: '1rem', background: '#39c9aaff', display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100vw' }}>
         <div className='logo-container'>
           <img src={logo} alt="main-logo" className="logo-img" />
-          <h1>OralVis Healthcare</h1>
+          <h1 className="main-head">OralVis Healthcare</h1>
         </div>
         {user && (
           <div>
