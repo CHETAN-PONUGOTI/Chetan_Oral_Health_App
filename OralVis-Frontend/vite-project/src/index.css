@@ -250,10 +250,16 @@ input:focus, select:focus {
     padding: 15px;
   }
   .tech-label{
-    color: #03395eff;
+    color: #030c13ff;
   }
   .box-border{
     width: '100%';
-    border-color: 1px solid black;
+    border-color: 2px solid black;
+  }
+  .page-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: #030c13ff;
   }
 }
