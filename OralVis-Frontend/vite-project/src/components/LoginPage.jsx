@@ -17,7 +17,7 @@ const LoginPage = () => {
       const response = await axios.post(`${import.meta.env.VITE_API_URL}/api/auth/login`, {
         email,
         password,
-    });
+      });
 
       const { token } = response.data;
       localStorage.setItem('token', token);
@@ -40,19 +40,19 @@ const LoginPage = () => {
   };
 
   return (
-    <div style={{ maxWidth: '400px', margin: '2rem auto' }}>
-      <h2>Login</h2>
+    <div className="card form-card">
+      <h2 className="form-title">Login</h2>
       <form onSubmit={handleSubmit}>
         <div style={{ marginBottom: '1rem' }}>
           <label>Email:</label>
-          <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required style={{ width: '100%', padding: '8px' }} />
+          <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required style={{ width: '100%', padding: '8px', border: '2px solid #43d3ecff' }} />
         </div>
         <div style={{ marginBottom: '1rem' }}>
           <label>Password:</label>
-          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required style={{ width: '100%', padding: '8px' }}/>
+          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required style={{ width: '100%', padding: '8px', border: '2px solid #43d3ecff' }}/>
         </div>
-        {error && <p style={{ color: 'red' }}>{error}</p>}
-        <button type="submit" style={{ width: '100%', padding: '10px' }}>Login</button>
+        {error && <p className="error-message">{error}</p>}
+        <button type="submit" className="button">Login</button>
       </form>
     </div>
   );
