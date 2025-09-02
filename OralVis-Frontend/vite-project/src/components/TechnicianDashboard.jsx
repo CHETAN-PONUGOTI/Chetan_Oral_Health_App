@@ -63,31 +63,31 @@ const TechnicianDashboard = () => {
       <h2 className="page-title">Technician Dashboard: Upload Scan</h2>
       <form onSubmit={handleSubmit} style={{ maxWidth: '500px' }}>
         <div style={{ marginBottom: '1rem' }}>
-          <label style={{ color: 'white' }}>Patient Name:</label>
-          <input type="text" name="patientName" onChange={handleChange} required style={{ width: '100%' }} />
+          <label className="tech-label">Patient Name:</label>
+          <input type="text" name="patientName" onChange={handleChange} required className='box-border' />
         </div>
         <div style={{ marginBottom: '1rem' }}>
-          <label style={{ color: 'white' }}>Patient ID:</label>
-          <input type="text" name="patientId" onChange={handleChange} required style={{ width: '100%' }}/>
+          <label className="tech-label">Patient ID:</label>
+          <input type="text" name="patientId" onChange={handleChange} required className='box-border'/>
         </div>
         <div style={{ marginBottom: '1rem' }}>
-          <label style={{ color: 'white' }}>Scan Type:</label>
-          <select name="scanType" onChange={handleChange} value={formData.scanType} style={{ width: '100%' }}>
+          <label className="tech-label">Scan Type:</label>
+          <select name="scanType" onChange={handleChange} value={formData.scanType} className='box-border'>
             <option>Intraoral</option>
             <option>Extraoral</option>
           </select>
         </div>
         <div style={{ marginBottom: '1rem' }}>
-          <label style={{ color: 'white' }}>Region:</label>
-          <select name="region" onChange={handleChange} value={formData.region} style={{ width: '100%' }}>
+          <label className="tech-label">Region:</label>
+          <select name="region" onChange={handleChange} value={formData.region} className='box-border'>
             <option>Hyderabad</option>
             <option>Vizay</option>
             <option>Bengaluru</option>
           </select>
         </div>
         <div style={{ marginBottom: '1rem' }}>
-          <label style={{ color: 'white' }}>Scan Image (JPEG, PNG):</label>
-          <input type="file" name="scanImage" onChange={handleFileChange} accept="image/jpeg, image/png" required style={{ width: '100%', color: 'white' }}/>
+          <label className="tech-label">Scan Image (JPEG, PNG):</label>
+          <input type="file" name="scanImage" onChange={handleFileChange} accept="image/jpeg, image/png" required className='box-border'/>
         </div>
         <button type="submit" className="button" disabled={isSubmitting}>{isSubmitting ? 'Uploading...' : 'Upload Scan'}</button>
       </form>

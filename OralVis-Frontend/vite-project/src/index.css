@@ -226,6 +226,13 @@ input:focus, select:focus {
   padding: 20px;
 }
 
+.tech-label{
+  color: white;
+}
+
+.box-border{
+  width: '100%';
+}
 
 @media (max-width: 768px){
   .tech-cont{
@@ -241,5 +248,12 @@ input:focus, select:focus {
     height: 100vh;
     width: 100vw;
     padding: 15px;
+  }
+  .tech-label{
+    color: #03395eff;
+  }
+  .box-border{
+    width: '100%';
+    border-color: 1px solid black;
   }
 }
