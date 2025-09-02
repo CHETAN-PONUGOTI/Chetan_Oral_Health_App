@@ -254,12 +254,15 @@ input:focus, select:focus {
   }
   .box-border{
     width: '100%';
-    border-color: 2px solid black;
+    border: 1px solid black;
   }
   .page-title {
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 2rem;
     color: #030c13ff;
+  }
+  .main-head{
+    font-size: 20px;
   }
 }
