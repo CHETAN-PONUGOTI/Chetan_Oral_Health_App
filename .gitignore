@@ -1,0 +1,12 @@
+# Backend specific ignores
+OralVis-Backend/node_modules
+OralVis-Backend/oralvis.db
+OralVis-Backend/.env
+
+# Frontend specific ignores
+OralVis-Frontend/vite-project/node_modules
+OralVis-Frontend/vite-project/dist
+OralVis-Frontend/vite-project/.env
+
+# General ignores
+.vscode/
